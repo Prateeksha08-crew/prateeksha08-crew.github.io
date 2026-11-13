@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prateeksha J | Computer Science Engineer</title>
+  <meta name="description" content="Portfolio of Prateeksha J, a final year Computer Science student in Coimbatore who builds full stack and AI applications.">
+  <meta name="theme-color" content="#FF5A1F">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23FF5A1F'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EPJ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#home" aria-label="Prateeksha J, home">PJ</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#internship">Internship</a>
+      <a href="#certification">Certification</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <h1 class="hero-name" aria-label="Prateeksha J">
+        <span class="line" data-split>PRATEEKSHA</span>
+      </h1>
+
+      <div class="hero-row">
+        <div class="hero-left">
+          <span class="hero-j" data-split aria-hidden="true">J</span>
+          <p class="hero-intro">I build full stack and AI powered applications. Final year Computer Science student at Sri Ramakrishna Engineering College, based in Coimbatore.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#projects">See my projects</a>
+            <a class="btn btn-line" data-link="resume" href="#" download>Download resume</a>
+          </div>
+        </div>
+
+        <figure class="hero-photo">
+          <div class="blob-back" aria-hidden="true"></div>
+          <div class="blob">
+            <span class="blob-initials" aria-hidden="true">PJ</span>
+            <img src="assets/photo.jpg" alt="Portrait of Prateeksha J" onerror="this.remove()">
+          </div>
+          <figcaption class="sticker">Class of 2027</figcaption>
+        </figure>
+      </div>
+
+      <a class="scroll-hint" href="#about">Scroll</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">I like turning an idea into something people can actually use. My projects range from a complaint classifier that writes short summaries for officials to a mobile app that keeps working when a village loses its network.</p>
+          <p>I am studying B.E. Computer Science and Engineering at Sri Ramakrishna Engineering College. Alongside coursework I have interned in full stack development and data science, completed NVIDIA's Fundamentals of Deep Learning, and presented a research project at an international conference.</p>
+          <p>I am looking for a software or AI engineering role where I can keep learning from experienced engineers and ship work that matters. I am based in Coimbatore and available to work from the office.</p>
+        </div>
+
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>Python, Java, JavaScript, C, HTML5, CSS3</dd></div>
+          <div><dt>AI and ML</dt><dd>scikit learn, Pandas, NumPy, Gemini API, Hugging Face, Prompt engineering</dd></div>
+          <div><dt>Web</dt><dd>React.js, Node.js, Flask, Spring Boot, REST APIs</dd></div>
+          <div><dt>Databases</dt><dd>MySQL, MongoDB, SQLite</dd></div>
+          <div><dt>Tools</dt><dd>Git, GitHub, Postman, Render, Flutter</dd></div>
+        </dl>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee">
+          <span>Python</span><span>Java</span><span>React.js</span><span>Flask</span><span>Machine Learning</span><span>Node.js</span><span>MongoDB</span><span>Spring Boot</span><span>Gemini API</span><span>Flutter</span><span>REST APIs</span><span>MySQL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects">
+
+        <article class="project" data-open="true">
+          <h3>
+            <button class="project-head" aria-expanded="true" aria-controls="p1">
+              <span class="project-title">AI Complaint Classifier and Summarizer</span>
+              <span class="project-stack">Python, scikit learn, Gemini API, Flask, React.js</span>
+              <span class="project-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="project-body" id="p1"><div class="project-inner">
+            <p>Sanitation complaints arrive as free text, so officials spend time sorting them. This tool sorts each complaint by category and urgency and writes a short summary, so the urgent ones are seen first.</p>
+            <ul>
+              <li>Trained a TF IDF and logistic regression model, evaluated with accuracy and a confusion matrix.</li>
+              <li>Used the Gemini API with prompt engineering to generate short summaries for officials.</li>
+              <li>Built a Flask REST API and a React.js priority dashboard, deployed on Render.</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" data-link="classifierDemo" href="#">Live demo</a>
+              <a class="btn btn-line" data-link="classifierRepo" href="#">Source code</a>
+            </div>
+          </div></div>
+        </article>
+
+        <article class="project" data-open="false">
+          <h3>
+            <button class="project-head" aria-expanded="false" aria-controls="p2">
+              <span class="project-title">Rural Cleanliness Checker App</span>
+              <span class="project-stack">Flutter, SQLite, GPS, Android</span>
+              <span class="project-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="project-body" id="p2"><div class="project-inner">
+            <p>A mobile app for reporting and tracking sanitation issues in rural areas, where the network is often weak or missing.</p>
+            <ul>
+              <li>Stores complaints offline in SQLite so reports are never lost in low connectivity areas.</li>
+              <li>Adds GPS and image capture so every issue is tagged with its exact location.</li>
+              <li>Role based access for citizens, officials, and administrators.</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" data-link="ruralDemo" href="#">Live demo</a>
+              <a class="btn btn-line" data-link="ruralRepo" href="#">Source code</a>
+            </div>
+          </div></div>
+        </article>
+
+        <article class="project" data-open="false">
+          <h3>
+            <button class="project-head" aria-expanded="false" aria-controls="p3">
+              <span class="project-title">Food Allergen and Diet Planner</span>
+              <span class="project-stack">Python, Flask, MongoDB, HTML5, CSS3, JavaScript</span>
+              <span class="project-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="project-body" id="p3"><div class="project-inner">
+            <p>A full stack web application that recommends safe food options based on a person's allergies and diet preferences.</p>
+            <ul>
+              <li>Recommendation logic written in Python and Flask and exposed through REST endpoints.</li>
+              <li>MongoDB schemas for food data, allergen details, and user information.</li>
+              <li>Responsive interface built with HTML5, CSS3, and JavaScript.</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" data-link="foodDemo" href="#">Live demo</a>
+              <a class="btn btn-line" data-link="foodRepo" href="#">Source code</a>
+            </div>
+          </div></div>
+        </article>
+
+        <article class="project" data-open="false">
+          <h3>
+            <button class="project-head" aria-expanded="false" aria-controls="p4">
+              <span class="project-title">PriceRadar</span>
+              <span class="project-stack">Python, Pandas, scikit learn, Chart.js</span>
+              <span class="project-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="project-body" id="p4"><div class="project-inner">
+            <p>A price intelligence dashboard built for Datathon 2026. It compares prices, discounts, ratings, and a value score across four Indian online marketplaces.</p>
+            <ul>
+              <li>Cleaned and merged Kaggle datasets from Amazon, Flipkart, Myntra, and Snapdeal into one schema.</li>
+              <li>Engineered features such as value score and discount tier, and trained Random Forest and Gradient Boosting models.</li>
+              <li>Standalone HTML dashboard with Chart.js, search, filters, and optional AI buying insights.</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" data-link="priceDemo" href="#">Live demo</a>
+              <a class="btn btn-line" data-link="priceRepo" href="#">Source code</a>
+            </div>
+          </div></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2023 to 2027</span>
+          <div>
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p>Sri Ramakrishna Engineering College, Coimbatore</p>
+            <p class="score">CGPA 7.99 out of 10</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2020 to 2022</span>
+          <div>
+            <h3>Higher Secondary (HSC)</h3>
+            <p>Vivekam Matriculation Higher Secondary School</p>
+            <p class="score">83.5 percent</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- INTERNSHIP -->
+    <section class="section" id="internship">
+      <h2 class="section-title">Internship</h2>
+      <div class="roles">
+        <article class="role">
+          <div class="role-top">
+            <h3>Full Stack Development Intern</h3>
+            <span class="when">Dec 2025</span>
+          </div>
+          <p class="company">Gateway Software Solutions</p>
+          <ul>
+            <li>Built and improved responsive web interfaces with HTML5, CSS3, and JavaScript for full stack application features.</li>
+            <li>Helped develop backend logic and connect databases using Java, supporting end to end application functionality.</li>
+          </ul>
+        </article>
+        <article class="role">
+          <div class="role-top">
+            <h3>Data Science Intern</h3>
+            <span class="when">Jul 2024</span>
+          </div>
+          <p class="company">Techvolt</p>
+          <ul>
+            <li>Cleaned, preprocessed, and analysed data in Excel to support data driven application development.</li>
+            <li>Organised datasets and identified patterns to support analytics and decision making.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATION -->
+    <section class="section" id="certification">
+      <h2 class="section-title">Certification and achievements</h2>
+      <div class="cert-grid">
+        <div>
+          <h3 class="sub">Certifications</h3>
+          <ul class="plain">
+            <li><strong>Fundamentals of Deep Learning</strong><span>NVIDIA, 2024</span></li>
+            <li><strong>Technology Job Simulation</strong><span>Deloitte, 2026</span></li>
+            <li><strong>Cyber Security and Privacy</strong><span>NPTEL, 2024</span></li>
+            <li><strong>Privacy and Security in Online Social Media</strong><span>NPTEL, 2024</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Achievements</h3>
+          <ul class="plain">
+            <li><strong>Research publication, iTech SECOM 2025</strong><span>Presented the Eat'osure project at this international conference</span></li>
+            <li><strong>Winner, District Level Women's Football Tournament</strong><span>2024</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <h2 class="contact-title">Have a project or a role in mind? Let's talk.</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Coimbatore, Tamil Nadu, India</p>
+            <p><a href="mailto:prateekshaj03@gmail.com">prateekshaj03@gmail.com</a></p>
+            <p><a href="tel:+918248184995">+91 82481 84995</a></p>
+            <p class="socials">
+              <a data-link="github" href="#">GitHub</a>
+              <a data-link="linkedin" href="#">LinkedIn</a>
+              <a data-link="leetcode" href="#">LeetCode</a>
+            </p>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+
+            <label for="f-email">Your email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="4" required></textarea>
+
+            <button class="btn btn-solid" type="submit">Send</button>
+            <p class="form-note" id="form-note" role="status"></p>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>&copy; <span id="year">2026</span> Prateeksha J</span>
+        <a href="#top">Back to top</a>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
